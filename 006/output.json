@@ -1,1 +1,87 @@
-{"method": [""], "solvent": [], "solvent_v": [], "temperature": [], "ph": [], "precursors": [{"precursor": "", "precursor_conc": "", "precursor_mass": ""}], "additives": [{"additive": "", "additive_conc": "", "additive_mass": ""}], "seeds": [], "composition": [""], "sizes": [{"length": "", "width": "", "depth": ""}], "crystalsystem": ["cubic"], "pdfno": [], "shape": [""]}
+{
+  "stages": [
+    {
+      "description": "Dissolution of Cu(NO3)2·3H2O and addition of SiO2",
+      "conditions": {
+        "temperature": "room temperature",
+        "ph": "initial"
+      },
+      "precursors": [
+        {
+          "precursor": "Cu(NO3)2·3H2O",
+          "precursor_mass": "760 mg"
+        }
+      ],
+      "solvent": "water",
+      "solvent_v": "100 mL",
+      "additives": [
+        {
+          "additive": "SiO2",
+          "additive_mass": "1 g"
+        }
+      ]
+    },
+    {
+      "description": "pH adjustment and stirring",
+      "conditions": {
+        "temperature": "room temperature",
+        "ph": "11",
+        "duration": "6 hours"
+      },
+      "additives": [
+        {
+          "additive": "NH4OH",
+          "additive_method": "dropwise"
+        }
+      ]
+    },
+    {
+      "description": "Heating and ammonia evaporation",
+      "conditions": {
+        "temperature": "80 ℃",
+        "ph": "6.5"
+      }
+    },
+    {
+      "description": "Solvothermal treatment",
+      "conditions": {
+        "temperature": "200 ℃",
+        "duration": "12 hours"
+      }
+    },
+    {
+      "description": "Centrifugation and washing",
+      "conditions": {
+        "temperature": "room temperature",
+        "centrifugation_speed": "8,000 rpm",
+        "centrifugation_duration": "5 minutes",
+        "washing_repetitions": 4
+      }
+    },
+    {
+      "description": "Drying",
+      "conditions": {
+        "temperature": "120 ℃",
+        "duration": "4 hours"
+      }
+    },
+    {
+      "description": "Calcination",
+      "conditions": {
+        "temperature": "400 ℃",
+        "duration": "4 hours",
+        "heating_rate": "5 ℃/min",
+        "atmosphere": "static air"
+      }
+    }
+  ],
+  "final_product": {
+    "composition": "20% CuO/CuSiO3",
+    "different_loadings": [
+      "2 wt.%",
+      "15 wt.%",
+      "30 wt.%"
+    ],
+    "crystal_system": "cubic"
+  }
+}
